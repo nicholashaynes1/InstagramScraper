@@ -7,10 +7,6 @@ import random
 driver = webdriver.Chrome('C:/Users/nick/InstaPy/assets/chromedriver')
 # Navigate to instagram
 driver.get('https://www.instagram.com')
-# The hashtable that holds usernames
-usernamesTable = {}
-# The hashtable that holds the passwords
-passwordsTable = {}
 
 def main():
 	enterEmail()
@@ -52,6 +48,8 @@ def generateEmail():
 def generateUsername():
 	randomUsername = ''.join([random.choice(string.ascii_letters + string.digits) for n in range(5)])
 	return randomUsername;
+
+
 
 
 
